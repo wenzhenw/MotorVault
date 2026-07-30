@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import week11.st099681.finalproject.screens.ScannerScreen
 import week11.st099681.finalproject.ui.theme.MotorVaultTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,17 +20,16 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MotorVaultTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                App()
             }
         }
     }
 }
 
+@Composable
+fun App() {
+    ScannerScreen()
+}
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(

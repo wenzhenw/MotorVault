@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "week11.st099681.finalproject"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
@@ -58,4 +58,6 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:34.16.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
+
+    implementation("com.google.mlkit:text-recognition:16.0.1")
 }
