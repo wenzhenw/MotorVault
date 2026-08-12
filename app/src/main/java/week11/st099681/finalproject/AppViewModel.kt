@@ -44,6 +44,15 @@ class AppViewModel : ViewModel() {
 
     val isLoggedIn: Boolean get() = auth.currentUser != null
 
+    /** Display name captured at registration, falling back to the email's local part. */
+    val userName: String
+        get() {
+            val displayName = auth.currentUser?.displayName?.trim()
+            if (!displayName.isNullOrBlank()) return displayName
+            val email = auth.currentUser?.email
+            return email?.substringBefore("@")?.takeIf { it.isNotBlank() } ?: "Driver"
+        }
+
     private fun userDoc() = auth.currentUser?.uid?.let { db.collection("users").document(it) }
 
     fun startListening() {
