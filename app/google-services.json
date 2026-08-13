@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1032469723105",
+    "project_id": "motorvault-41056",
+    "storage_bucket": "motorvault-41056.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032469723105:android:f45f3a4279d0c014b584a0",
+        "android_client_info": {
+          "package_name": "week11.st099681.finalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9ShPNS2Dh6ur19xccVAyuarhlGIo9SxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
